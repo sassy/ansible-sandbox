@@ -1,0 +1,7 @@
+- name: Install Docker
+  hosts: all
+  become: yes # 権限を昇格させるために sudo を使用
+  gather_facts: yes
+
+  roles:
+    - geerlingguy.docker
